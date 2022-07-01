@@ -48,8 +48,8 @@ required lines using awk
 Checks it you're using LVM or not. It list the file partition
 structure, checks the results with grep and then prints yes it an LVM
 volume exits
-```$(lsblk -o type | grep lvm | sort -u
- | awk '{if ($1) {print "yes"} else {print "no"}}')
+```
+(lsblk -o type | grep lvm | sort -u | awk '{if ($1) {print "yes"} else {print "no"}}')
 ```
 ### Connections TCP:
 Searches the :cat /proc/net/snmp for the network info,
