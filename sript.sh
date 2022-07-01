@@ -6,7 +6,7 @@ wall "#Architecture: $(uname -a) #CPU physical: $(nproc --all) #vCPU: $(grep pro
 #CPU load: (utilisation rate of processor/processors): $(top -bn1 | awk '/Cpu/ {printf "%.1f %%", $2}')
 #Last boot: $(who --boot | awk '{print $3,$4}')
 #LVM use: $(lsblk -o type | grep lvm | sort -u | awk '{if ($1) {print "yes"} else {print "no"}}')
-#Connections TCP: $(awk 'BEGIN{ORS=" "} /^Tcp/ {print $10}' /proc/net/snmp)
+#Connections TCP: $(cat /proc/net/snmp |grep Tcp |grep -v RtoAlgorithm |awk '{printf "%s ESTABLISHED", $10}')
 #User log: $(who | cut -d ' ' -f 1 | sort -u | wc -l)
 #Network: $(hostname -I) (MAC address: $(ip link | grep ether | awk '{print $2}'))
 #Sudo: $(cat /var/log/sudo/sudo_log |wc -l)
