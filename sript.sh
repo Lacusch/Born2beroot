@@ -8,6 +8,6 @@ wall "#Architecture: $(uname -a) #CPU physical: $(nproc --all) #vCPU: $(grep pro
 #LVM use: $(lsblk -o type | grep lvm | sort -u | awk '{if ($1) {print "yes"} else {print "no"}}')
 #Connections TCP: $(cat /proc/net/snmp |grep Tcp |grep -v RtoAlgorithm |awk '{printf "%s ESTABLISHED", $10}')
 #User log: $(who | cut -d ' ' -f 1 | sort -u | wc -l)
-#Network: IP $(hostname -I) ( $(ip link | grep ether | awk '{print $2}'))
+#Network: IP $(hostname -I) ($(ip link | grep ether | awk '{print $2}'))
 #Sudo: $(cat /var/log/sudo/sudo_log |wc -l)
 "
