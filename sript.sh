@@ -1,6 +1,6 @@
 #/!bin/bash
 
-wall " #Architecture: $(uname -a) #CPU physical: $(nproc --all) #vCPU: $(grep processor /proc/cpuinfo | wc -l)
+wall "#Architecture: $(uname -a) #CPU physical: $(nproc --all) #vCPU: $(grep processor /proc/cpuinfo | wc -l)
 #Memory Usage: $(free --human | awk '/^Mem/ {printf "%s/%s (%.2f %%)", $3, $2, $3/$2*100}')
 #Disk Usage: $(df --human-readable / /var /srv /home /tmp /var/log --total | awk '/^total/ {printf "%s/%s (%.2f %%)", $3,$2,$3/$2*100}')
 #CPU load: (utilisation rate of processor/processors): $(top -bn1 | awk '/Cpu/ {printf "%.1f %%", $2}')
