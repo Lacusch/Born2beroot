@@ -1,5 +1,7 @@
 # Born2beroot
-This is just a quick explanation of the script and what each line does.
+This project required you to set up a debian virtual mashine and get ito the basics of system administration.
+A requirement for this was to create a monitoring strip to show some required info about thi system.
+This README is just a quick explanation of the script and what each line does.
 
 ## Explanations:
 This script is using awk to achieve more advanced options, this section
@@ -7,7 +9,7 @@ provides only the bare basics, to learn more try to run only some parts
 of the commands to understand it, or learn more at man awf, so RTFM ;)
 
 Partly/Mostly based on a script created by AnniYuko, with the goal of
-Providing more documentation: , [origial repo](https://github.com/AnniYuko/42cursus/tree/main/born2beroot).
+explaning what each command does [origial repo](https://github.com/AnniYuko/42cursus/tree/main/born2beroot).
 ### List system Architecture:
 `$uname -a`
 ### Lists physical CPU cores:
