@@ -1,6 +1,6 @@
 # Born2beroot
 This project required you to set up a debian virtual mashine and get into the basics of system administration.
-A requirement for this was to create a monitoring strip to show some required info about thi system.
+A requirement for this was to create a monitoring strip to show some required info about this system.
 This README is just a quick explanation of the script and what each line does.
 
 ## Explanations:
